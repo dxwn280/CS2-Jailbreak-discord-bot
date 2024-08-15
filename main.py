@@ -3,6 +3,7 @@ import json
 from discord.ext import commands
 from commands import map as map_command
 from commands import players as players_command
+# from commands import temp2 as temp_command
 
 intents = discord.Intents.all()
 intents.message_content = True
@@ -16,6 +17,7 @@ OWNER = int(config_data['owner'])
 # Import and register the map commands from map.py
 client.add_command(map_command.map)
 client.add_command(players_command.players)
+# client.add_command(temp_command.embed)
 
 # Event: Bot is ready
 @client.event

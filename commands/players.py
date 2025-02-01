@@ -151,7 +151,7 @@ async def players(ctx: discord.Member = None):
                 tlist2 = tlist[midpoint2:midpoint2*2] + [tlist[midpoint2*3+1]]
                 tlist3 = tlist[midpoint2*2:midpoint2*3]
 
-            #embed shit
+
             embed = discord.Embed(
                 title=f"Click to connect\nMap: {mapinfo}",
                 url="https://cs2browser.com/connect/104.128.58.156:27015",
@@ -196,11 +196,7 @@ async def players(ctx: discord.Member = None):
             await ctx.send(embed=embed)
     else:
             await ctx.send(f"Map: {mapinfo}\nPlayers: 0\nServer is dead or gameme/server is down. \nhttps://i.imgur.com/ZQFv2cq.mp4")
-
-    #else:
-    #    message = 'Error! User must stop being a retard and unblock his master (dawn).'
-    #    await ctx.send(message)
-        
+   
     if ctx.author.id != OWNER:
         print(detective_info)
         webhook_url = WEBHOOKURL
